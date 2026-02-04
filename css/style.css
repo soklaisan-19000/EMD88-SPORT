@@ -84,6 +84,12 @@ img {
     list-style: none;
     display: flex;
 }
+
+/* Hide hamburger on desktop */
+.hamburger {
+    display: none;
+}
+
 /* Update Navigation Links */
 .nav-links li a {
     display: block;
@@ -96,6 +102,8 @@ img {
     font-family: 'Kantumruy Pro', sans-serif; /* Clean professional look for menu */
     font-size: 20px; 
     font-weight: 700;
+    pointer-events: auto;
+    cursor: pointer;
 }
 
 /* Update Section Titles (បាល់ទាត់ជាតិ, etc.) */
@@ -236,11 +244,15 @@ img {
     background: #d35400;
 }
 
-.list-item { display: flex; gap: 12px; cursor: pointer; margin-bottom: 15px; }
+.list-item { display: flex; gap: 12px; cursor: pointer; margin-bottom: 15px; text-decoration: none; color: inherit; }
 .list-item img { width: 100px; height: 65px; transition: 0.3s; }
 .list-item:hover img { filter: brightness(1.1); }
 .list-item p { font-size: 0.9rem; font-weight: bold; line-height: 1.3; transition: 0.3s; }
 .list-item:hover p { color: #31b3db; }
+
+/* Links that wrap cards or headers should not show underline and inherit color */
+.card-link { text-decoration: none; color: inherit; display: block; }
+.category-link { text-decoration: none; color: inherit; }
 
 /* =========================================
    6. FOOTER
@@ -290,3 +302,69 @@ footer {
 .mobile-slider {
     display: none;
 }
+
+/* =========================================
+   8. CATEGORY PAGE LAYOUTS
+========================================= */
+
+/* Two-big-image row container */
+.content-wrapper > div[style*="display:flex"][style*="gap:2px"] {
+    width: 100%;
+    margin: 0 !important;
+}
+
+.content-wrapper > div[style*="display:flex"][style*="gap:2px"] > div {
+    min-width: 0; /* Fix flex overflow issue */
+}
+
+.content-wrapper > div[style*="display:flex"][style*="gap:2px"] img {
+    width: 100%;
+    height: auto;
+}
+
+/* Ensure the two-big-image row uses fixed height on desktop and covers the area */
+.content-wrapper > div[style*="display:flex"][style*="gap:2px"] img {
+    height: 320px; /* default desktop height */
+    object-fit: cover;
+    display: block;
+}
+
+/* Content section images should scale responsively */
+.content-wrapper > div[style*="display:flex"][style*="gap:30px"] img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Fix flex overflow on very small screens */
+.content-wrapper > div[style*="display:flex"] > div {
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+/* Content wrapper with image and text */
+.content-wrapper > div[style*="display:flex"][style*="gap:30px"] {
+    width: 100%;
+    max-width: 100%;
+}
+
+.content-wrapper > div[style*="display:flex"][style*="gap:30px"] img {
+    width: 100%;
+    height: auto;
+}
+
+/* Category header styling */
+.category-header-styled {
+    background: linear-gradient(135deg, #31b3db 0%, #2a95b5 100%);
+    padding: 25px 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.category-header-styled .title {
+    font-family: 'Moul', serif;
+    font-size: 28px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+

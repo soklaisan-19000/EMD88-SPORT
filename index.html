@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="shortcut icon" href="images/image.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Moul&family=Kantumruy+Pro:wght@400;700&display=swap" rel="stylesheet">
-    <script src="js/main.js"></script>
 </head>
 <body>
 
@@ -32,13 +31,13 @@
                 </div>
     
                 <ul class="nav-links">
-                    <li><a href="#">បាល់ទាត់ជាតិ</a></li>
-                    <li><a href="#">បាល់ទាត់អន្តរជាតិ</a></li>
-                    <li><a href="#">ប្រដាល់អន្តរជាតិ</a></li>
-                    <li><a href="#">ប្រដាល់ជាតិ</a></li>
-                    <li><a href="#">បាល់ទះ</a></li>
-                    <li><a href="#">កីឡាគ្រប់ប្រភេទ</a></li>
-                    <li><a href="#">CTS FANTASY</a></li>
+                    <li><a href="national football.html">បាល់ទាត់ជាតិ</a></li>
+                    <li><a href="international football.html">បាល់ទាត់អន្តរជាតិ</a></li>
+                    <li><a href="international boxing.html">ប្រដាល់អន្តរជាតិ</a></li>
+                    <li><a href="national boxing.html">ប្រដាល់ជាតិ</a></li>
+                    <li><a href="volleyball.html">បាល់ទះ</a></li>
+                    <li><a href="all sports.html">កីឡាគ្រប់ប្រភេទ</a></li>
+                    <li><a href="cts fantasy.html">CTS FANTASY</a></li>
                 </ul>
             </div>
         </nav>
@@ -46,7 +45,7 @@
     <section class="mobile-slider">
     <div class="slides">
 
-        <div class="slide active">
+        <div class="slide active" data-link="international football.html">
             <img src="images/photo_4_2026-02-01_20-40-02.jpg" alt="">
             <div class="slide-overlay">
                 <span class="badge">បាល់ទាត់អន្តរជាតិ</span>
@@ -54,15 +53,15 @@
             </div>
         </div>
 
-        <div class="slide">
+        <div class="slide" data-link="national football.html">
             <img src="images/photo_4_2026-01-30_20-55-20.jpg" alt="">
             <div class="slide-overlay">
                 <span class="badge">បាល់ទាត់ជាតិ</span>
-                <h3>ក្រុមជម្រើសជាតិកម្ពុជា ត្រៀមប្រកួតសំខាន់</h3>
+                <h3>ក្រុមជម្រើសជាតិកម្ពុជា ត្រៀមប្រកួតសំខាន</h3>
             </div>
         </div>
 
-        <div class="slide">
+        <div class="slide" data-link="international football.html">
             <img src="images/photo_5_2026-01-29_20-59-17.jpg" alt="">
             <div class="slide-overlay">
                 <span class="badge">បាល់ទាត់អន្តរជាតិ</span>
@@ -132,8 +131,10 @@
     
         <div class="category-column">
             <div class="category-header">
-                <span class="title">បាល់ទាត់ជាតិ</span>
-                <span class="arrow">></span>
+                <a href="national football.html" class="category-link" style="display:flex; justify-content:space-between; align-items:center; text-decoration:none; color:inherit;">
+                    <span class="title">បាល់ទាត់ជាតិ</span>
+                    <span class="arrow">></span>
+                </a>
             </div>
             
             <div class="big-card">
@@ -156,24 +157,28 @@
     
         <div class="category-column">
             <div class="category-header">
-                <span class="title">បាល់ទាត់អន្តរជាតិ</span>
-                <span class="arrow">></span>
+                <a href="international football.html" class="category-link" style="display:flex; justify-content:space-between; align-items:center; text-decoration:none; color:inherit;">
+                    <span class="title">បាល់ទាត់អន្តរជាតិ</span>
+                    <span class="arrow">></span>
+                </a>
             </div>
             
-            <div class="big-card">
-                <img src="images/photo_4_2026-02-01_20-40-02.jpg" alt="Liverpool">
-                <div class="card-caption">Liverpool កំពុងតាមប្រមាញ់ខ្សែការពារ Geertruida...</div>
-            </div>
-    
+            <a href="international football.html" class="card-link">
+                <div class="big-card">
+                    <img src="images/photo_4_2026-02-01_20-40-02.jpg" alt="Liverpool">
+                    <div class="card-caption">Liverpool កំពុងតាមប្រមាញ់ខ្សែការពារ Geertruida...</div>
+                </div>
+            </a>
+
             <div class="small-list">
-                <div class="list-item">
+                <a href="international football.html" class="list-item">
                     <img src="images/photo_4_2026-01-30_20-55-20.jpg" alt="Benfica">
                     <p>ទម្រង់ Benfica បង្កប់ការសង្ស័យរបស់ Real...</p>
-                </div>
-                <div class="list-item">
+                </a>
+                <a href="international football.html" class="list-item">
                     <img src="images/photo_4_2026-01-30_20-55-20.jpg" alt="CL">
                     <p>ក្លឹបយក្សទាំង ៥ ELP បានដឹងពីគូប្រកួត...</p>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -181,47 +186,55 @@
     
         <div class="category-column">
             <div class="category-header">
-                <span class="title">ប្រដាល់ជាតិ </span>
-                <span class="arrow">></span>
+                <a href="national boxing.html" class="category-link" style="display:flex; justify-content:space-between; align-items:center; text-decoration:none; color:inherit;">
+                    <span class="title">ប្រដាល់ជាតិ</span>
+                    <span class="arrow">></span>
+                </a>
             </div>
             
-            <div class="big-card">
-                <img src="images/thurn.jpg" alt="National Team">
-                <div class="card-caption">CFSS រៀបចំព្រឹត្តិការណ៍បាល់ទាត់សប្បុរសធម៌...</div>
-            </div>
+            <a href="national boxing.html" class="card-link">
+                <div class="big-card">
+                    <img src="images/thurn.jpg" alt="National Team">
+                    <div class="card-caption">CFSS រៀបចំព្រឹត្តិការណ៍ប្រដាល់...</div>
+                </div>
+            </a>
     
             <div class="small-list">
-                <div class="list-item">
+                <a href="national boxing.html" class="list-item">
                     <img src="images/thurn.jpg" alt="Real">
-                    <p>Real Madrid មិនធ្វើកិច្ចព្រមព្រៀងជាមួយ Davies...</p>
-                </div>
-                <div class="list-item">
+                    <p>ព័ត៌មានពាក់ព័ន្ធនឹងសម្រង់...</p>
+                </a>
+                <a href="national boxing.html" class="list-item">
                     <img src="images/thurn.jpg" alt="Match">
-                    <p>ស្វាគមន៍ ឡាន ក្រុមបាល់ទាត់កម្ពុជា...</p>
-                </div>
+                    <p>ស្វាគមន៍ទស្សនីយភាពព្រឹត្តិការណ៍...</p>
+                </a>
             </div>
         </div>
     
         <div class="category-column">
             <div class="category-header">
-                <span class="title">កីឡាគ្រប់ប្រភេទ </span>
-                <span class="arrow">></span>
+                <a href="all sports.html" class="category-link" style="display:flex; justify-content:space-between; align-items:center; text-decoration:none; color:inherit;">
+                    <span class="title">កីឡាគ្រប់ប្រភេទ</span>
+                    <span class="arrow">></span>
+                </a>
             </div>
             
-            <div class="big-card">
-                <img src="images/all.jpg" alt="Liverpool">
-                <div class="card-caption">Liverpool កំពុងតាមប្រមាញ់ខ្សែការពារ Geertruida...</div>
-            </div>
+            <a href="all sports.html" class="card-link">
+                <div class="big-card">
+                    <img src="images/all.jpg" alt="All Sports">
+                    <div class="card-caption">ព័ត៌មានកីឡា និងព្រឹត្តិការណ៍...</div>
+                </div>
+            </a>
     
             <div class="small-list">
-                <div class="list-item">
+                <a href="all sports.html" class="list-item">
                     <img src="images/all.jpg" alt="Benfica">
-                    <p>ទម្រង់ Benfica បង្កប់ការសង្ស័យរបស់ Real...</p>
-                </div>
-                <div class="list-item">
+                    <p>ព្រឹត្តិការណ៍កីឡាផ្សេងៗ...</p>
+                </a>
+                <a href="all sports.html" class="list-item">
                     <img src="images/all.jpg" alt="CL">
-                    <p>ក្លឹបយក្សទាំង ៥ ELP បានដឹងពីគូប្រកួត...</p>
-                </div>
+                    <p>ពត៌មានកីឡាជំរើស...</p>
+                </a>
             </div>
         </div>
     </section>
@@ -229,47 +242,55 @@
     
         <div class="category-column">
             <div class="category-header">
-                <span class="title">ប្រដាល់អន្តរជាតិ</span>
-                <span class="arrow">></span>
+                <a href="international boxing.html" class="category-link" style="display:flex; justify-content:space-between; align-items:center; text-decoration:none; color:inherit;">
+                    <span class="title">ប្រដាល់អន្តរជាតិ</span>
+                    <span class="arrow">></span>
+                </a>
             </div>
             
-            <div class="big-card">
-                <img src="images/ice_screenshot_20230716-125253.png" alt="National Team">
-                <div class="card-caption">CFSS រៀបចំព្រឹត្តិការណ៍បាល់ទាត់សប្បុរសធម៌...</div>
-            </div>
+            <a href="international boxing.html" class="card-link">
+                <div class="big-card">
+                    <img src="images/ice_screenshot_20230716-125253.png" alt="International Boxing">
+                    <div class="card-caption">ព័ត៌មានប្រដាល់អន្តរជាតិ...</div>
+                </div>
+            </a>
     
             <div class="small-list">
-                <div class="list-item">
+                <a href="international boxing.html" class="list-item">
                     <img src="images/ice_screenshot_20230716-125253.png" alt="Real">
-                    <p>Real Madrid មិនធ្វើកិច្ចព្រមព្រៀងជាមួយ Davies...</p>
-                </div>
-                <div class="list-item">
+                    <p>ព័ត៌មានប្រដាល់អន្ដរជាតិ...</p>
+                </a>
+                <a href="international boxing.html" class="list-item">
                     <img src="images/ice_screenshot_20230716-125253.png" alt="Match">
-                    <p>ស្វាគមន៍ ឡាន ក្រុមបាល់ទាត់កម្ពុជា...</p>
-                </div>
+                    <p>របាយការណ៍ពីព្រឹត្តិការណ៍...</p>
+                </a>
             </div>
         </div>
     
         <div class="category-column">
             <div class="category-header">
-                <span class="title">បាល់ទះ </span>
-                <span class="arrow">></span>
+                <a href="volleyball.html" class="category-link" style="display:flex; justify-content:space-between; align-items:center; text-decoration:none; color:inherit;">
+                    <span class="title">បាល់ទះ</span>
+                    <span class="arrow">></span>
+                </a>
             </div>
             
-            <div class="big-card">
-                <img src="images/5.jpg" alt="Liverpool">
-                <div class="card-caption">Liverpool កំពុងតាមប្រមាញ់ខ្សែការពារ Geertruida...</div>
-            </div>
+            <a href="volleyball.html" class="card-link">
+                <div class="big-card">
+                    <img src="images/5.jpg" alt="Volleyball">
+                    <div class="card-caption">ព្រឹត្តិការណ៍បាល់ទះ និងព័ត៌មាន...</div>
+                </div>
+            </a>
     
             <div class="small-list">
-                <div class="list-item">
+                <a href="volleyball.html" class="list-item">
                     <img src="images/5.jpg" alt="Benfica">
-                    <p>ទម្រង់ Benfica បង្កប់ការសង្ស័យរបស់ Real...</p>
-                </div>
-                <div class="list-item">
+                    <p>ព័ត៌មានបាល់ទះ...</p>
+                </a>
+                <a href="volleyball.html" class="list-item">
                     <img src="images/5.jpg" alt="CL">
-                    <p>ក្លឹបយក្សទាំង ៥ ELP បានដឹងពីគូប្រកួត...</p>
-                </div>
+                    <p>លទ្ធផល និងព្រឹត្តិការណ៍...</p>
+                </a>
             </div>
         </div>
     </section>
@@ -280,7 +301,7 @@
                 <div class="footer-logo">
                     <img src="images/image.png" alt="CTS Sport Logo">
                 </div>
-                <p>© រក្សាសិទ្ធិគ្រប់យ៉ាងដោយ cts-sport.com ឆ្នាំ២០១៨</p>
+                <p>© រក្សាសិទ្ធិគ្រប់យ៉ាងដោយ cts-sport.com ឆ្នាំ២០០៉</p>
                 <p><strong>អាសយដ្ឋាន</strong></p>
                 <p>#34E0 ផ្លូវ 13 បុរីពិភពថ្មី ប្រេស៊ីល ភ្នំពេញ</p>
             </div>
@@ -297,5 +318,6 @@
             </div>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>
