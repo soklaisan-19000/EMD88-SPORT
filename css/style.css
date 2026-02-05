@@ -7,16 +7,14 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
     font-family: 'Kantumruy Pro', Arial, sans-serif;
-    background-color: #f7f7f7;
-    color: #333;
+    background-color: #302C2C;
+    color: #ffffff;
     line-height: 1.5;
-    overflow-x: hidden; /* Prevents horizontal scroll during animations */
+    overflow-x: hidden;
 }
 
 img {
@@ -28,36 +26,25 @@ img {
 /* =========================================
    2. HEADER & NAVIGATION
 ========================================= */
-
-/* Logo area - Scrolls away */
 .header-top {
-    background-color: #000;
+    background-color: #000000;
     padding: 15px 0;
     text-align: center;
-    
-
 }
 
 .header-top img {
     height: 70px;
     margin: 0 auto;
-   
-    
-
 }
 
-/* Sticky Navbar - ONLY this pins */
+/* Sticky Navbar */
 .navbar {
-    position: -webkit-sticky; /* For Safari */
     position: sticky;
     top: 0;
     z-index: 9999;
-    background-color: #31b3db;
-    border-bottom: 4px solid #d35400;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
-    
-
-    
+    background-color: #302C2C;
+    border-bottom: 4px solid #C2B742;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.4);
 }
 
 .nav-content {
@@ -68,16 +55,16 @@ img {
 }
 
 .home-link {
-    background-color: #31b3db;
-    color: #fff;
-    padding: 15x 20px;
+    background-color: #302C2C;
+    color: #C2B742;
+    padding: 15px 20px;
     text-decoration: none;
     font-size: 1.2rem;
     transition: 0.3s;
 }
 
 .home-link:hover {
-    background-color: #d35400;
+    background-color: #000000;
 }
 
 .nav-links {
@@ -85,52 +72,26 @@ img {
     display: flex;
 }
 
-/* Hide hamburger on desktop */
-.hamburger {
-    display: none;
-}
+.hamburger { display: none; }
 
-/* Update Navigation Links */
 .nav-links li a {
     display: block;
     padding: 15px 18px;
-    color: #fff;
-    font-size: 14px;
-    font-weight: bold;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
     text-decoration: none;
     transition: all 0.3s ease;
-    font-family: 'Kantumruy Pro', sans-serif; /* Clean professional look for menu */
-    font-size: 20px; 
-    font-weight: 700;
-    pointer-events: auto;
-    cursor: pointer;
 }
 
-/* Update Section Titles (បាល់ទាត់ជាតិ, etc.) */
-.category-header .title {
-    font-family: 'Moul', serif; /* Traditional bold Khmer font */
-    font-size: 1.1rem;
-    letter-spacing: 1px;
-}
-
-/* Update News Headlines */
-.main-story h3, 
-.sub-story h4, 
-.card-caption {
-    font-family: 'Kantumruy Pro', sans-serif;
-    font-weight: 700;
-    line-height: 1.6; /* Better readability for Khmer script */
-}
 .nav-links li a:hover,
 .nav-links li a.active {
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(194,183,66,0.25);
 }
 
 /* =========================================
-   3. ANIMATIONS & HOVER EFFECTS
+   3. ANIMATIONS & EFFECTS
 ========================================= */
-
-/* Reveal on Scroll Class (Use with JS) */
 .reveal {
     opacity: 0;
     transform: translateY(30px);
@@ -142,23 +103,29 @@ img {
     transform: translateY(0);
 }
 
-/* Image Zoom Hover */
 .main-story, .sub-story, .big-card {
-    overflow: hidden; /* Required for zoom effect */
+    overflow: hidden;
 }
 
-.main-story img, .sub-story img, .big-card img {
+.main-story img,
+.sub-story img,
+.big-card img {
     transition: transform 0.6s ease;
 }
 
-.main-story:hover img, 
-.sub-story:hover img, 
+.main-story:hover img,
+.sub-story:hover img,
 .big-card:hover img {
     transform: scale(1.08);
 }
 
-/* Badge Pulse */
 .badge {
+    background-color: #C2B742;
+    color: #000000;
+    font-size: 12px;
+    padding: 2px 8px;
+    margin-bottom: 8px;
+    width: fit-content;
     animation: pulse 2.5s infinite;
 }
 
@@ -198,22 +165,18 @@ img {
     justify-content: flex-end;
     padding: 15px;
     background: linear-gradient(transparent, rgba(0,0,0,0.9));
-    color: #fff;
+    color: #ffffff;
     z-index: 2;
-}
-
-.badge {
-    background-color: #31b3db;
-    font-size: 12px;
-    padding: 2px 8px;
-    margin-bottom: 8px;
-    width: fit-content;
 }
 
 /* =========================================
    5. SIDEBAR & CATEGORIES
 ========================================= */
-.sidebar { display: flex; flex-direction: column; gap: 20px; }
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
 .category-news-container {
     max-width: 1200px;
@@ -225,41 +188,69 @@ img {
 }
 
 .category-header .title {
+    font-family: 'Moul', serif;
     font-weight: bold;
-    color: #d35400;
-    border-bottom: 2px solid #d35400;
+    color: #C2B742;
+    border-bottom: 2px solid #C2B742;
     padding-bottom: 5px;
-    margin-bottom: -2px;
 }
 
 .card-caption {
-    background: #222;
-    color: #fff;
+    background: #000000;
+    color: #ffffff;
     padding: 10px;
     font-size: 0.9rem;
     transition: background 0.3s;
 }
 
 .big-card:hover .card-caption {
-    background: #d35400;
+    background: #C2B742;
+    color: #000000;
 }
 
-.list-item { display: flex; gap: 12px; cursor: pointer; margin-bottom: 15px; text-decoration: none; color: inherit; }
-.list-item img { width: 100px; height: 65px; transition: 0.3s; }
-.list-item:hover img { filter: brightness(1.1); }
-.list-item p { font-size: 0.9rem; font-weight: bold; line-height: 1.3; transition: 0.3s; }
-.list-item:hover p { color: #31b3db; }
+.list-item {
+    display: flex;
+    gap: 12px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: inherit;
+}
 
-/* Links that wrap cards or headers should not show underline and inherit color */
-.card-link { text-decoration: none; color: inherit; display: block; }
-.category-link { text-decoration: none; color: inherit; }
+.list-item img {
+    width: 100px;
+    height: 65px;
+    transition: 0.3s;
+}
+
+.list-item:hover img {
+    filter: brightness(1.15);
+}
+
+.list-item p {
+    font-size: 0.9rem;
+    font-weight: bold;
+    line-height: 1.3;
+    transition: 0.3s;
+}
+
+.list-item:hover p {
+    color: #C2B742;
+}
+
+.card-link,
+.category-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
 
 /* =========================================
    6. FOOTER
 ========================================= */
 footer {
-    background-color: #000;
-    color: #fff;
+    background-color: #000000;
+    color: #ffffff;
     padding: 50px 20px;
     margin-top: 40px;
 }
@@ -275,33 +266,121 @@ footer {
 /* =========================================
    7. RESPONSIVE DESIGN
 ========================================= */
+@media (max-width: 992px) {
+    .main-container {
+        grid-template-columns: 1fr;
+    }
+
+    .category-news-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .sidebar { order: 2; }
+}
+
 @media (max-width: 768px) {
-    .navbar {
-        position: sticky; /* Keep pinned on mobile */
+    .navbar { position: sticky; }
+
+    .hamburger {
+        display: flex !important;
+        flex-direction: column;
+        gap: 5px;
+        padding: 12px;
+        cursor: pointer;
+    }
+
+    .hamburger span {
+        width: 25px;
+        height: 3px;
+        background: #C2B742;
+        transition: 0.3s;
     }
 
     .nav-links {
-        display: none; /* Hidden unless .active is added via JS */
+        display: none;
         flex-direction: column;
         width: 100%;
         position: absolute;
         top: 100%;
         left: 0;
-        background-color: #31b3db;
+        background: #302C2C;
     }
 
-    .nav-links.active {
-        display: flex;
-    }
+    .nav-links.active { display: flex; }
 
-    .main-container, .news-grid, .category-news-container, .footer-container {
+    .news-grid,
+    .footer-container,
+    .category-news-container {
         grid-template-columns: 1fr;
     }
+
+    .news-section { display: none; }
 }
-/* HIDE mobile slider by default (desktop) */
+
+@media (max-width: 480px) {
+    h3 { font-size: 16px; }
+    p { font-size: 13px; }
+}
+
+/* =========================================
+   MOBILE SLIDER
+========================================= */
 .mobile-slider {
     display: none;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: #000000;
 }
+
+.mobile-slider .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.mobile-slider .slide {
+    min-width: 100%;
+    position: relative;
+}
+
+.mobile-slider img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.mobile-slider .slide-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.85));
+    color: #ffffff;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.mobile-slider .slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.6);
+    color: #C2B742;
+    border: none;
+    font-size: 22px;
+    padding: 6px 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.mobile-slider .prev { left: 10px; }
+.mobile-slider .next { right: 10px; }
+
+@media (max-width: 768px) {
+    .mobile-slider { display: block; }
+}
+
 
 /* =========================================
    8. CATEGORY PAGE LAYOUTS
@@ -355,7 +434,7 @@ footer {
 
 /* Category header styling */
 .category-header-styled {
-    background: linear-gradient(135deg, #31b3db 0%, #2a95b5 100%);
+    background: linear-gradient(135deg, #C2B742 0%, #C2B742 100%);
     padding: 25px 20px;
     margin-bottom: 30px;
     text-align: center;
@@ -368,3 +447,135 @@ footer {
     text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
+/* facebook */
+/* =========================================
+   EXTRA FIXES FOR HOME PAGE
+========================================= */
+
+/* ---------- BADGE ---------- */
+.badge {
+    background: #31b3db;
+    color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 3px 8px;
+    border-radius: 3px;
+}
+
+/* ---------- META DATE ---------- */
+.meta {
+    font-size: 12px;
+    opacity: 0.85;
+    margin-top: 6px;
+}
+
+/* ---------- MOBILE SLIDER CLICK ---------- */
+.mobile-slider .slide {
+    cursor: pointer;
+}
+
+/* ---------- FB SIDEBAR ---------- */
+.fb-plugin {
+    background: #fff;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.fb-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.mini-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.fb-header span {
+    display: block;
+    font-size: 12px;
+    color: #777;
+}
+
+.fb-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.fb-buttons button {
+    flex: 1;
+    padding: 8px 10px;
+    border: none;
+    background: #31b3db;
+    color: #fff;
+    font-size: 13px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.fb-buttons button:hover {
+    background: #d35400;
+}
+
+/* ---------- SIDEBAR PROMO ---------- */
+.sidebar-promo img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+/* ---------- CATEGORY COLUMN ---------- */
+.category-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Arrow */
+.category-header .arrow {
+    font-size: 20px;
+    font-weight: bold;
+    color: #d35400;
+}
+
+/* ---------- BIG CARD ---------- */
+.big-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.big-card img {
+    transition: transform 0.4s ease;
+}
+
+.big-card:hover img {
+    transform: scale(1.08);
+}
+
+/* ---------- SMALL LIST ---------- */
+.small-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* ---------- MOBILE FIX ---------- */
+@media (max-width: 768px) {
+
+    .sidebar {
+        display: none;
+    }
+
+    .category-news-container {
+        margin-top: 20px;
+    }
+
+    .card-caption {
+        font-size: 14px;
+    }
+}

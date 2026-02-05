@@ -31,7 +31,6 @@
 ========================================= */
 @media (max-width: 768px) {
 
-    /* Navbar */
     .navbar {
         position: sticky;
         top: 0;
@@ -44,7 +43,6 @@
         align-items: center;
     }
 
-    /* Hamburger */
     .hamburger {
         display: flex !important;
         flex-direction: column;
@@ -57,7 +55,7 @@
     .hamburger span {
         width: 25px;
         height: 3px;
-        background: #fff;
+        background: #ffffff;
         transition: 0.3s;
     }
 
@@ -73,7 +71,6 @@
         transform: rotate(45deg) translate(-5px, -6px);
     }
 
-    /* Mobile Menu */
     .nav-links {
         display: none !important;
         position: absolute;
@@ -81,7 +78,7 @@
         left: 0;
         width: 100%;
         flex-direction: column;
-        background: #31b3db;
+        background: #302C2C;
         z-index: 10000;
     }
 
@@ -91,11 +88,10 @@
 
     .nav-links li a {
         padding: 15px 20px;
-        color: #fff;
+        color: #ffffff;
         border-bottom: 1px solid rgba(255,255,255,0.2);
     }
 
-    /* Layout stacking */
     .news-grid,
     .footer-container {
         grid-template-columns: 1fr;
@@ -119,7 +115,6 @@
         height: 300px;
     }
 
-    /* HIDE desktop layout */
     .news-section {
         display: none;
     }
@@ -152,7 +147,7 @@
     position: relative;
     width: 100%;
     overflow: hidden;
-    background: #000;
+    background: #000000;
 }
 
 .mobile-slider .slides {
@@ -172,25 +167,23 @@
     object-fit: cover;
 }
 
-/* Overlay */
 .mobile-slider .slide-overlay {
     position: absolute;
     inset: 0;
     background: linear-gradient(transparent, rgba(0,0,0,0.85));
-    color: #fff;
+    color: #ffffff;
     padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
 
-/* Buttons */
 .mobile-slider .slider-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     background: rgba(0,0,0,0.6);
-    color: #fff;
+    color: #ffffff;
     border: none;
     font-size: 22px;
     padding: 6px 10px;
@@ -201,7 +194,6 @@
 .mobile-slider .prev { left: 10px; }
 .mobile-slider .next { right: 10px; }
 
-/* SHOW slider on mobile only */
 @media (max-width: 768px) {
     .mobile-slider {
         display: block;
