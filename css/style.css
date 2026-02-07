@@ -263,6 +263,13 @@ footer {
     grid-template-columns: 1.5fr 1fr 1fr;
     gap: 40px;
 }
+/* Footer Logo */
+.footer-logo img {
+    width: 120px;      /* កែទំហំ logo តាមចិត្ត */
+    max-width: 100%;
+    height: auto;      /* រក្សាសមាមាត្រ */
+    display: block;
+}
 
 /* =========================================
    7. RESPONSIVE DESIGN
